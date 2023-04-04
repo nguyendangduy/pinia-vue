@@ -24,6 +24,13 @@ export default defineComponent({
       <button class="counter-btn" @click="useCounter.decreaseCount">-</button>
     </div>
     <!-- <div>{{ useCounter.squaredCount }}</div> -->
+    <br />
+    <hr />
+    <br />
+    <h2>Squared Count</h2>
+    <div class="counter">
+      <span>{{ useCounter.squaredCount }}</span>
+    </div>
   </main>
 </template>
 
@@ -39,6 +46,7 @@ header {
 
 .counter {
   font-size: 70px;
+  text-align: center;
 }
 
 .counter-wrapper {
@@ -59,6 +67,10 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 50px;
+}
+
+h2 {
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
